@@ -64,7 +64,29 @@ nav a{
 
 nav a:hover{
     border-bottom: 3px solid var(--cor-primaria);
+    color: var(--cor2);
 }
 
 /*Formatando o banner*/
 
+.banner{
+    height: calc(100vh - 100px); /*calculo para fazer com que o banner ocupe 100% da tela do usuario*/
+    background-image: url('../../media/bg.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+     /*basicamente o atributo (overflow: hidden;) ignora todo tipo de valor que esteja fora do container definido dentro dele ou seja ele vai ignorar a barra de rolagem lateral que os sliders provocou*/
+}
+
+.banner .sliders{
+    width: 310vw;
+    height: 100%;
+}
+
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
