@@ -3,6 +3,22 @@
     padding: 0px;
     box-sizing: border-box;
 }
+:root{
+    /*Paleta de cores*/
+
+    --cor-primaria: #b98b57;
+    --cor1: #373737;
+    --cor2: #adadad;
+    --cor3: #686868;
+    --cor4: #ededed;
+
+    /*Fontes*/
+
+    --mont: 'Montserrat', sans-serif;
+}
+
+/*Formatando o menu*/
+
 header{
     height: 100px;
     background-color: black;
@@ -22,7 +38,6 @@ header{
 }
 #menu{
     display: flex;
-    align-items: center;
 }
 nav ul{
     display: flex;
@@ -33,12 +48,23 @@ nav li{
     margin: 0px;
     padding: 0px;
     font-size: 13px;
+    font-weight: 600;
+    font-family: var(--mont);
 }
 nav a{
+    height: 100px;
     padding: 10px;
     text-decoration: none;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     color: white;
+    border-bottom: 3px solid black;
 }
+
+nav a:hover{
+    border-bottom: 3px solid var(--cor-primaria);
+}
+
+/*Formatando o banner*/
+
