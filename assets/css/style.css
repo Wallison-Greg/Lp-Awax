@@ -90,3 +90,60 @@ nav a:hover{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.6);
 }
+.banner .slide_area{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 50px;
+}
+.banner span{
+    color: var(--cor-primaria);
+    padding-left: 10px;
+}
+.banner h2{
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.banner a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--cor-primaria);
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+    margin-top: 35px;
+    border-radius: 18px;
+}
+.banner a:hover{
+    background-color:#a87e4e;
+}
+.banner .slide_point{
+    width: 100vw;
+    height: 20px;
+    position: absolute; /*esse atributo faz com que o elemento se sobreponha a outros elementos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px; 
+    /*por padrão o .slide_point ficara em baixo do slide sendo assim e nescessario definir uma margem negativa para que esse atributo possa ficar dentro do slide*/
+}
+.banner .pointer{
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer; /*esse atributo faz com que o elemento fique similar ao um link ou seja um elemento clicavel*/
+}
+.banner .active{
+    background-color: var(--cor-primaria);
+}
