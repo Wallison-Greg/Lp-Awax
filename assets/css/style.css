@@ -3,6 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden; 
+    font-family: var(--mont);
+    /*Basicamente esse atributo faz com que todo o conteudo contido dentro do body que causa uma barra de rolagem no eixo "x" seja ignorado*/
+}
 :root{
     /*Paleta de cores*/
 
@@ -27,7 +32,7 @@ header{
     color: white;
 }
 .container{
-    max-width: 1040px;
+    max-width: 1140px;
     display: flex;
     justify-content: space-between;
 }
@@ -80,7 +85,7 @@ nav a:hover{
 }
 
 .banner .sliders{
-    width: 310vw;
+    width: 300vw;
     height: 100%;
 }
 
@@ -112,7 +117,7 @@ nav a:hover{
     margin-top: 10px;
     font-size: 20px;
 }
-.banner a{
+.btn{
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -123,7 +128,7 @@ nav a:hover{
     margin-top: 35px;
     border-radius: 18px;
 }
-.banner a:hover{
+.btn:hover{
     background-color:#a87e4e;
 }
 .banner .slide_point{
@@ -146,4 +151,79 @@ nav a:hover{
 }
 .banner .active{
     background-color: var(--cor-primaria);
+}
+
+/*formatando o conteudo da aplicação*/
+
+.default{
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+.default .container{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.default .sec_title,
+.default .sec_desc{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default .sec_title{
+    font-size: 20px;
+}
+.default .sec_desc{
+    margin:8px 0px 30px 0px;
+    font-size: 10px;
+    color: var(--cor2);
+}
+
+.light .sec_title,
+.light .sec_body{
+    color:black;
+}
+.darck .sec_title,
+.darck .sec_body{
+    color: white;
+}
+
+.darck{
+    background-color: black;
+}
+
+
+/*formatação de areas especificas*/
+
+/*area "about us"*/
+
+.default .sec_body{
+    display: flex;
+    justify-content: center;
+}
+.sec_body .sec_cont{
+    font-weight: 400;
+    line-height: 18px;
+    flex: 2;
+}
+.sec_body .sec_vd{
+    flex: 1;
+}
+
+.sec_body .sec_cont{
+    font-size: 12px;
+}
+
+.sec_body .btn{
+    font-size: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.sec_body .sec_vd {
+    margin-left: 10px;
+}
+.sec_body .sec_vd img{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.473);
+    border-radius: 3px;
+    
 }
