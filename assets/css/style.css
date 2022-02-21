@@ -531,10 +531,29 @@ nav a:hover{
     color: var(--cor2);
     text-align: center;
     font-size: 12px;
-    margin: 15px 0px 20px 0px;
+    margin: 10px 0px 35px 0px;
 }
 
 .happy_clients .slide_point{
     margin-top: -25px;
     margin-bottom: 30px;
+}
+
+/*area "brands"*/
+
+.brands {
+    margin-top: 30px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.466);
+    background-color: rgb(250, 244, 234);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.brands .container{
+    height: 135px;
+    align-items: center;
+}
+.brands .company{
+    flex: 1;
+    margin-right: 50px;
 }
