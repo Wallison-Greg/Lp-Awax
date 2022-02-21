@@ -371,3 +371,109 @@ nav a:hover{
     display: flex;
     justify-content: center;
 }
+
+/*area "team"*/
+
+
+.bg_team{
+    background-image: url('../../media/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+}
+.sec_team_area{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+.sec_team{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.sec_team .sliders{
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sec_team .slide{
+    width: 270px;
+    height: 310px;
+    min-height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    background-color: white;
+    margin-right: 15px;
+}
+.sec_team .slide_area{
+    margin-top: 5px;
+    height: 300px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.sec_team_area .slide_point{
+    height: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec_team_area .pointer{
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer; 
+}
+.sec_team_area .active{
+    background-color: var(--cor-primaria);
+}
+.slide_body{
+    max-width: 863.5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.team_avatar{
+    width: 150px;
+    height: 150px;
+}
+.team_name{
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.team_func{
+    font-size: 10px;
+    margin: 5px 0px 20px 0px;
+    color: var(--cor2);
+}
+.team_social{
+    display: flex;
+}
+.team_social .social{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    border-radius: 13px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor3);
+}
+.social:hover,
+.team_social .active{
+    background-color: var(--cor-primaria);
+}
