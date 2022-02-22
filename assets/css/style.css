@@ -600,7 +600,7 @@ nav a:hover{
     margin: 5px 0px 5px 0px;
     width: 10px;
     height: 2px;
-    background-color: #373737;
+    background-color: var(--cor2);
 }
 .package_desc{
     display: flex;
@@ -644,7 +644,7 @@ nav a:hover{
     margin-bottom: 0px;
 }
 .sec_package .btn{
-    margin-top: 25px;
+    margin: 25px 0px 30px 0px;
 }
 .sec_package .slide_package{
     display: flex;
@@ -688,4 +688,39 @@ nav a:hover{
 .feature .title_feature:first-child,
 .feature .cheked_feature:first-child{
     margin-top: 10px;
+}
+
+
+/*area "some facts"*/
+.sec_some_facts{
+    padding-bottom: 20px;
+}
+.sec_some_facts .serv_logo{
+    background-image: none;
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.sec_some_facts .bar{
+    margin: 8px 0px 8px 0px;
+    width: 10px;
+    height: 2px;
+    background-color: var(--cor2);
+}
+.sec_some_facts .serv_title{
+    font-size: 14px;
+}
+.sec_some_facts .serv_desc{
+    max-width: 150px;
+}
+.sec_some_facts .desc_espac{
+    margin-top: 20px;
+}
+.sec_some_facts .sec_service,
+.sec_some_facts .sec_service:last-child{
+    border: none;
 }
