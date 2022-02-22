@@ -823,3 +823,55 @@ nav a:hover{
 .contact_us input[type="submit"]:hover{
     background-color:#a87e4e;
 }
+
+/*seção "map"*/
+
+.sec_map {
+    background-image: url('../../media/mapa.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+.sec_map .container{
+    width: 100vw;
+    height: auto;
+    justify-content:flex-start;
+}
+.sec_map .inf_map{
+    background-color: var(--cor5);
+    border-radius: 5px;
+    width: 540px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.582);
+}
+.inf_map .map_cont{
+    margin: auto;
+}
+.inf_map .desc_map{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.desc_map .icon_map{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--cor2);
+}
+.inf_map .desc_icon a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor2);
+}
+
+/*rodapé*/
