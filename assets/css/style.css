@@ -724,3 +724,56 @@ nav a:hover{
 .sec_some_facts .sec_service:last-child{
     border: none;
 }
+
+/*area "networks"*/
+
+.social_networks{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--cor2);
+}
+.social_networks .social{
+    width: 25px;
+    height: 25px;
+    border-radius: 13px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 5px 15px 15px;
+    background-color: var(--cor2);
+}
+.social_networks .share{
+    background-color: white;
+    margin-right: 10px;
+}
+.social_networks .face{
+    background-color: #336296;
+}
+.social_networks .twitter{
+    background-color: #34c5f1;
+}
+.social_networks .linkedin{
+    background-color: #147db6;
+}
+.social_networks .pinterest{
+    background-color: #b81c29;
+}
+.social_networks .googleplus{
+    background-color: #e64238;
+}
+.social_networks span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: var(--cor2);
+    font-size: 10px;
+    margin-right: 10px;
+}
+.social_networks #sp_share{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+/*area "contact"*/
