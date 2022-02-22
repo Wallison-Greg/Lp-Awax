@@ -730,7 +730,7 @@ nav a:hover{
 .social_networks{
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--cor2);
+    border-bottom: 1px solid #adadad7e;
 }
 .social_networks .social{
     width: 25px;
@@ -777,3 +777,49 @@ nav a:hover{
 }
 
 /*area "contact"*/
+
+.contact_us input::-webkit-input-placeholder{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+}
+.contact_us input{
+    border: none;
+    height: 30px;
+    width: 250px;
+    border-bottom: 1px solid #adadad7e;
+    outline: 0;
+}
+.contact_us #nome{
+    margin-right: 25px;
+}
+.contact_us .long_line{
+    margin-top: 30px;
+    width: 529px;
+    display: block;
+}
+.contact_us .form_btn{
+    display: flex;
+    justify-content: center;
+}
+.contact_us input[name="message"]{
+    margin: 40px 0px 30px 0px;
+}
+.contact_us input[type="submit"]{
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 13px;
+    background-color: var(--cor-primaria);
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.contact_us input[type="submit"]:hover{
+    background-color:#a87e4e;
+}
