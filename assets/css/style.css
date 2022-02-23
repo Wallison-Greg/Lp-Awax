@@ -971,7 +971,18 @@ address .redes_contacts:hover{
     /*area services*/
 
     .default .sec_body{
-        margin: 0px 15px;
+        flex-wrap: wrap;
+    }
+    .sec_body .sec_service{
+        min-width: 45%;
+        margin-bottom: 10px;
+        border: none;
+    }
+    .sec_body .sec_service:first-child{
+        border-right: 1px solid var(--cor3);
+    }
+    .sec_body .sec_service:last-child{
+        border-left: 1px solid var(--cor3);
     }
 
     /*area projects*/
@@ -990,4 +1001,46 @@ address .redes_contacts:hover{
         justify-content: center;
     }
 
+    /*area team*/
+
+    .slide_body{
+        max-width: 575px;
+    }
+    .slide_cont .resp{
+        display: none;
+    }
+
+    /*area happy client*/
+
+    .happy_clients .slide_area p{
+        max-width: 670px;
+    }
+
+    /*area brands*/
+    .brands .container{
+        height: 100px;
+    }
+    .brands .company{
+        margin-right: 30px;
+    }
+    .company img{
+        width: 60.2px;
+        height: 41.3px;
+    }
+
+    /*area price*/
+
+    .sec_body .package_price{
+        min-width: 45%;
+        margin:10px;
+    }
+
+    /*area premium*/
+
+    .slide_package{
+        flex-direction: column;
+    }
+    .slide_package .img_package{
+        margin-bottom: 20px;
+    }
 }
