@@ -45,6 +45,9 @@ header{
 #menu{
     display: flex;
 }
+#menu .menu_open{
+    display: none;
+}
 nav ul{
     display: flex;
 }
@@ -914,4 +917,46 @@ address .redes_contacts{
 }
 address .redes_contacts:hover{
     background-color: var(--cor-primaria);
+}
+
+/*responsividade*/
+
+@media (min-width: 450px) and (max-width: 800px){
+    header .container{
+        justify-content: space-around;
+    }
+    #menu{
+        align-items: center;
+    }
+    #menu .menu_open{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        margin-left: 70vw;
+        cursor: pointer;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 50vw;
+        position: absolute;
+        z-index: 99;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.87);
+        height: calc(100vh - 100px);
+    }
+    nav ul:first-child{
+        margin-top: 50px;
+    }
+    nav a{
+        border-bottom: none;
+        height: auto;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 4.8px 0px 4.8px 40px;
+    }
+    nav a:hover{
+        border-bottom: none;
+        color: var(--cor-primaria);
+    }
 }

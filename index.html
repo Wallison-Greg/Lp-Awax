@@ -7,6 +7,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/fv-icon-logo.png" type="image/x-icon">
+    <script type="text/javascript">
+        window.onload = () =>{
+            document.querySelector(".menu_open").addEventListener("click", () =>{
+                if(document.querySelector("#menu nav ul").style.display === 'flex'){
+                    document.querySelector("#menu nav ul").style.display = 'none'
+                }
+                else{
+                    document.querySelector("#menu nav ul").style.display = 'flex'
+                }
+            })
+        }
+    </script>
     <title>Awax</title>
 </head>
 <body>
@@ -21,6 +33,7 @@
                 </a>
             </div>
             <div id="menu">
+                <img class="menu_open" src="/assets/img/menu.png" alt="">
                 <nav>
                     <ul>
                         <li><a href="#">home</a></li>
