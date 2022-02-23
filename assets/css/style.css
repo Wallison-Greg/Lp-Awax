@@ -328,7 +328,6 @@ nav a:hover{
 }
 .sec_project_img .sec_project_photos{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -919,12 +918,11 @@ address .redes_contacts:hover{
     background-color: var(--cor-primaria);
 }
 
-/*responsividade*/
+/*responsividade para tablets*/
 
-@media (min-width: 450px) and (max-width: 800px){
-    header .container{
-        justify-content: space-around;
-    }
+@media (min-width: 718px) and (max-width: 800px){
+    /*menu responsivo*/
+
     #menu{
         align-items: center;
     }
@@ -959,4 +957,37 @@ address .redes_contacts:hover{
         border-bottom: none;
         color: var(--cor-primaria);
     }
+
+    /*area about*/
+
+    .sec_body .sec_vd img{
+        width: 310px;
+        height: 260px;
+    }
+    .sec_body .sec_cont{
+        margin-left: 10px;
+    }
+
+    /*area services*/
+
+    .default .sec_body{
+        margin: 0px 15px;
+    }
+
+    /*area projects*/
+
+    .sec_project_img_area {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .sec_project_photos .photo_area {
+        width: 220px;
+        margin: 10px 5px 10px 15px;
+        display: flex;
+        justify-content: center;
+    }
+
 }
