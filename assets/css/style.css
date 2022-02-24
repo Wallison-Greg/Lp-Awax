@@ -1044,3 +1044,223 @@ address .redes_contacts:hover{
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 717px){
+    #menu{
+        align-items: center;
+    }
+    #menu .menu_open{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        margin-left: 70vw;
+        cursor: pointer;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 50vw;
+        position: absolute;
+        z-index: 99;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.87);
+        height: calc(100vh - 100px);
+    }
+    nav ul:first-child{
+        margin-top: 50px;
+    }
+    nav a{
+        border-bottom: none;
+        height: auto;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 4.8px 0px 4.8px 40px;
+    }
+    nav a:hover{
+        border-bottom: none;
+        color: var(--cor-primaria);
+    }
+
+    /*area banner*/
+    
+    .banner h1{
+        font-size: 30px;
+    }
+    .banner h2{
+        font-size: 16px;
+    }
+    .banner .btn{
+        font-size: 11px;
+    }
+    .banner .slide_point{
+        margin-top: -75px;
+    }
+
+    /*area about*/
+
+    .sec_body .sec_vd img{
+        width: 310px;
+        height: 260px;
+    }
+    .sec_body .sec_vd{
+        margin: auto;
+    }
+    .sec_body .sec_cont{
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .default{
+        padding: 40px 0px 30px 0px;
+    }
+
+    /*area services*/
+
+    .default .sec_body{
+        flex-direction: column;
+    }
+    .sec_body .sec_service{
+        min-width: 45%;
+        margin-bottom: 10px;
+        border: none;
+    }
+    .sec_body  .sec_service:last-child{
+        border-right: none;
+    }
+
+    /*area projects*/
+
+    .sec_project_img_area {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        max-width: 400px;
+    }
+    .sec_project_photos .photo_area {
+        width: 170px;  
+        margin:auto;
+        margin-bottom: 8px;
+    }
+    .sec_projects ul{
+        flex-wrap: wrap;
+    }
+    .sec_projects li{
+        padding: 10px 20px;
+    }
+    .sec_projects #bd{
+        border-right: none;
+    }
+    .sec_body .sec_projects{
+        border-radius: 16px;
+    }
+
+    /*area team*/
+    .bg_team {
+        padding: 0;
+    }
+    .slide_body{
+        max-width: 575px;
+    }
+
+    .slide_cont .resp,
+    .slide_cont .resp1{
+        display: none;
+    }
+
+    /*area happy client*/
+
+    .happy_clients .slide_area p{
+        max-width: 670px;
+    }
+    .happy_clients .slide_point{
+        margin-top: -25px;
+    }
+
+    /*area brands*/
+    .brands .container{
+        height: 100px;
+    }
+    .brands .company{
+        margin-right: 30px;
+    }
+    .company img{
+        width: 60.2px;
+        height: 41.3px;
+    }
+    .brands .disp{
+        display: none;
+    }
+
+    /*area price*/
+
+    .sec_body .package_price{
+        min-width: 45%;
+        margin:10px;
+    }
+    .package_price a{
+        margin-bottom: 10px;
+    }
+    .package_price .package,
+    .package_price .price{
+        margin-top: 10px;
+    }
+
+    /*area premium*/
+
+    .slide_package{
+        flex-direction: column;
+    }
+    .slide_package .img_package{
+        margin-bottom: 20px;
+    }
+    .desc_feature p{
+        margin-right: 15px;
+    }
+    .sec_package .slide_point{
+        margin-top: 15px;
+    }
+
+    /*networks*/
+    .social_networks .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .social_networks .network_share{
+        display: flex;
+        align-items: center;
+    }
+    .social_networks .social{
+        margin: 10px 5px 15px 10px;
+    }
+
+    /*area contact*/
+
+    .form_contact{
+        max-width: 400px;
+    }
+    .contact_us input,
+    .contact_us .long_line{
+        width: 350px;
+        margin: 10px 0px 10px 20px;
+    }
+    .contact_us input[name="message"] {
+        margin: 20px 0px 30px 20px;
+    }
+
+    /*area map*/
+
+    .sec_map .inf_map{
+        max-width: 350px;
+        margin: auto;
+    }
+    .inf_map .map_cont{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .inf_map .desc_icon a{
+        font-size: 12px;
+    }
+}
